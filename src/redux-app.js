@@ -6,7 +6,7 @@ import './App.css';
 
 
 
-@connect(  // 效果同36行， 使用修饰器
+@connect(  // 效果同36行， 使用修饰器（安装transform-decorators-legacy， 并在babel-> plugins中使用）
   state => ({num: state}), // 第一个参数state放入组件props中
   {addGun, addGunAsync, mixinGun, mixinGunAsync} // 第二个参数 actions放入组件props中 
 )
