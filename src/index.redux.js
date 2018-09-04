@@ -1,7 +1,7 @@
 
 const ADD_GUN = "add"
 const MIXIN_GUN = "mixin"
-export function couter(state =0 , action){
+export function counter(state =0 , action){
     switch(action.type){
         case ADD_GUN:
             return state+1 // 不能使用 ++
